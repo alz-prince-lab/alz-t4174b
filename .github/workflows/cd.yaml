@@ -14,6 +14,7 @@ on:
         options:
           - 'apply'
           - 'destroy'
+          - 'force-unlock'
       terraform_cli_version:
         description: 'Terraform CLI Version'
         required: true
@@ -31,3 +32,4 @@ jobs:
       terraform_action: ${{ inputs.terraform_action }}
       root_module_folder_relative_path: '.'
       terraform_cli_version: ${{ inputs.terraform_cli_version }}
+
