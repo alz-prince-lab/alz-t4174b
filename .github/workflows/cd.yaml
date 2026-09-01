@@ -14,7 +14,6 @@ on:
         options:
           - 'apply'
           - 'destroy'
-          - 'force-unlock'
       terraform_cli_version:
         description: 'Terraform CLI Version'
         required: true
