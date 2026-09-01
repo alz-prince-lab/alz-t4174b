@@ -146,23 +146,23 @@ management_group_settings = {
   subscription_placement = {
     identity = {
       subscription_id       = "$${subscription_id_identity}"
-      management_group_name = "identity"
+      management_group_name = "t4174b-identity"
     }
     connectivity = {
       subscription_id       = "$${subscription_id_connectivity}"
-      management_group_name = "connectivity"
+      management_group_name = "t4174b-connectivity"
     }
     management = {
       subscription_id       = "$${subscription_id_management}"
-      management_group_name = "management"
+      management_group_name = "t4174b-management"
     }
     security = {
       subscription_id       = "$${subscription_id_security}"
-      management_group_name = "security"
+      management_group_name = "t4174b-security"
     }
   }
   policy_assignments_to_modify = {
-    alz = {
+    t4174b-alz = {
       policy_assignments = {
         Deploy-MDFC-Config-H224 = {
           parameters = {
@@ -182,21 +182,21 @@ management_group_settings = {
         }
       }
     }
-    connectivity = {
+    t4174b-connectivity = {
       policy_assignments = {
         Enable-DDoS-VNET = {
           creation_enabled = false
         }
       }
     }
-    landingzones = {
+    t4174b-landingzones = {
       policy_assignments = {
         Enable-DDoS-VNET = {
           creation_enabled = false
         }
       }
     }
-    corp = {
+    t4174b-corp = {
       policy_assignments = {
         Deploy-Private-DNS-Zones = {
           creation_enabled = false
